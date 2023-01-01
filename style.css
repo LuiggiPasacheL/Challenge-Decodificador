@@ -30,7 +30,7 @@ main {
     justify-content: space-between;
 }
 
-.input textarea,textarea::placeholder {
+.input textarea, .input textarea::placeholder {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
