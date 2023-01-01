@@ -23,21 +23,25 @@ function encryptAction() {
     const resultText = document.getElementById("result-text")
     const noResult = document.getElementById("no-result");
 
-    let text = input.value;
+    let text = input.value.trim();
 
-    resultText.value = encrypt(text);
-    result.hidden = false;
-    
-    noResult.hidden = true;
+    if(text !== ''){
+        resultText.value = encrypt(text);
+        result.hidden = false;
+        
+        noResult.hidden = true;
+    }
 }
 
 function decryptAction() {
     const input = document.getElementById("input-text");
     const resultText = document.getElementById("result-text");
 
-    let text = resultText.value;
+    let text = resultText.value.trim();
 
-    input.value = decrypt(text);
+    if(text !== ''){
+        input.value = decrypt(text);
+    }
 }
 
 function copy() {

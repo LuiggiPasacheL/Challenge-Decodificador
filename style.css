@@ -52,7 +52,7 @@ main {
     margin-left: 1px;
 }
 
-.result {
+.result-container {
     font-family: 'Inter';
     text-align: center;
     padding: 8%;
@@ -87,4 +87,5 @@ button {
 .secondary-button {
     background: #D8DFE8;
     border: 1px solid #0A3871;
+    color: #0A3871;
 }
