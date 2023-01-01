@@ -14,21 +14,20 @@
             <img src="img/Logo.png" alt="alura-logo">
         </div>
         <div class="input">
-            <textarea type="text" name="text" placeholder="Ingrese texto aqui"></textarea>
-            <!-- <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese texto aqui"></textarea> -->
+            <textarea type="text" name="text" id="input-text" placeholder="Ingrese texto aqui"></textarea>
             <section>
                 <div class="info-text">
                     <img src="img/bi_exclamation-circle-fill.png" alt="info-img">
                     <p>Solo letras minusculas sin acentos</p>
                 </div>
                 <div class="button-group">
-                    <button class="primary-button">Encriptar</button>
-                    <button class="secondary-button">Desencriptar</button>
+                    <button class="primary-button" onclick="encryptAction()">Encriptar</button>
+                    <button class="secondary-button" onclick="decryptAction()">Desencriptar</button>
                 </div>
             </section>
         </div>
         <div class="result">
-            <div>
+            <div id="no-result">
                 <section>
                     <img src="img/Muñeco.png" alt="alura-img">
                 </section>
@@ -37,11 +36,15 @@
                     <p>Ingresa el texto que deseas encriptar o desencriptar</p>
                 </section>
             </div>
-            <div hidden>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <button>Copiar</button>
+            <div id="result" hidden>
+                <textarea type="text" name="text" id="result-text" placeholder="Ingrese texto aqui">
+                    Hola mundo
+                </textarea>
+                <button onclick="copy()">Copiar</button>
             </div>
         </div>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
