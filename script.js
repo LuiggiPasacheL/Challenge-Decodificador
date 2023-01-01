@@ -28,6 +28,13 @@ function encryptAction() {
     if(text !== ''){
         resultText.value = encrypt(text);
         result.hidden = false;
+        result.style.display = 'flex';
+        result.style.flexDirection = 'column';
+        result.style.justifyContent = 'center';
+        result.style.alignItems = 'center';
+        result.style.justifyItems = 'center';
+        result.style.width = '100%';
+        result.style.height = '100%';
         
         noResult.hidden = true;
     }

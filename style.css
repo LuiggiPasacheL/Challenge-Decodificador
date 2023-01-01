@@ -9,11 +9,12 @@ body {
     max-height: 100%;
     background-color: #F3F5FC;
     height: 80%;
+    font-family: 'Inter';
 }
 
 main {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 0.5fr 4fr 1.3fr;
     padding: 4%;
     height: 100%;
 }
@@ -45,6 +46,7 @@ main {
 
 .info-text {
     margin-bottom: 20px;
+    font-family: 'Inter';
 }
 
 .info-text p {
@@ -56,11 +58,27 @@ main {
     font-family: 'Inter';
     text-align: center;
     padding: 8%;
-
     background: #FFFFFF;
-
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.result-container img {
+    width: 100%;
+}
+
+.result-container textarea{
+    height: 80%;
+    width: 100%;
+    margin-bottom: 5%;
+    resize: none;
+    border: none;
+    color: #495057;
+    font-size: 24px;
+    font-style: 'Inter';
 }
 
 .button-group {
