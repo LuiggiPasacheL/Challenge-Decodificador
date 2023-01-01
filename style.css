@@ -63,7 +63,7 @@ main {
     border-radius: 32px;
     display: flex;
     align-items: center;
-    align-content: center;
+    justify-content: center;
 }
 
 .result-container img {
@@ -106,4 +106,34 @@ button {
     background: #D8DFE8;
     border: 1px solid #0A3871;
     color: #0A3871;
+}
+
+.result-container button {
+    background-color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: center;
+    color: #0A3871;
+}
+
+@media (max-width: 768px) {
+    main {
+        display: block;
+    }
+    .input {
+        height: 80%;
+    }
+    .result-container img {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .input {
+        height: 80%;
+    }
+    .input textarea {
+        margin-bottom: 20px;
+        height: 100%;
+    }
 }
