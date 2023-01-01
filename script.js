@@ -10,11 +10,11 @@ function encrypt(text) {
 
 function decrypt(text) {
     return text
-        .replace("ufat", "u")
-        .replace("ober", "o")
-        .replace("ai", "a")
-        .replace("imes", "i")
-        .replace("enter", "e");
+        .replaceAll("ufat", "u")
+        .replaceAll("enter", "e")
+        .replaceAll("imes", "i")
+        .replaceAll("ai", "a")
+        .replaceAll("ober", "o");
 }
 
 function encryptAction() {
